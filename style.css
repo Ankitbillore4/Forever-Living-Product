@@ -17,3 +17,7 @@ width:100%;
 .photos{
 flex-wrap: nowrap;
 }
+
+body{
+ background-color: black;
+}
