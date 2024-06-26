@@ -5,6 +5,7 @@ var lastleft = document.querySelector(".lastleft")
 var lastright = document.querySelector(".lastright")
 var lasttop = document.querySelector(".lasttop")
 var lastbottom = document.querySelector(".lastbottom")
+var nav = document.querySelector(".nav")
 
 var flag=0
 sun.addEventListener("click",function(){
@@ -13,6 +14,7 @@ sun.addEventListener("click",function(){
         sun.style.backgroundColor = "black"
         sun.style.color ="white"
         body.style.backgroundColor ="whitesmoke" 
+        nav.style.backgroundColor ="whitesmoke"
     lastleft.style.color = "black"
     lastright.style.color ="black"
     lasttop.style.color ="black"
@@ -23,6 +25,7 @@ sun.addEventListener("click",function(){
        sun.style.backgroundColor = ""
         sun.style.color =""
     body.style.backgroundColor="black"
+    nav.style.backgroundColor ="#FFC500"
     lastleft.style.color = "white"
     lastright.style.color ="white"
     lasttop.style.color ="white"
@@ -30,5 +33,21 @@ sun.addEventListener("click",function(){
     sun.classList.add = "hidden"
         flag=0
     }
-    
+ 
 })
+
+nav.addEventListener("mouseenter",function(){
+    cursor.style.backgroundColor="black"
+})
+nav.addEventListener("mouseleave",function(){
+    cursor.style.backgroundColor= "#FFC500"
+})
+
+var cursor = document.querySelector(".cursor")
+var body = document.querySelector("body")
+body.addEventListener("mousemove",function(dets){
+    cursor.style.left =dets.x+"px" 
+    cursor.style.top =dets.y+"px"
+})
+
+

@@ -11,7 +11,7 @@ width:100%;
 }
 .forever h1{
   text-wrap: nowrap;
-  -webkit-text-stroke: 1px yellow;
+  -webkit-text-stroke: 1px #FFC500;
   color: transparent;
 }
 .photos{
@@ -20,4 +20,9 @@ flex-wrap: nowrap;
 
 body{
  background-color: black;
+}
+
+.cursor{
+  background-color: #ffc40000;
+  box-shadow: 0px 0px 15px 15px #ffc400;
 }
