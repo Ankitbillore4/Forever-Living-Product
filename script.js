@@ -37,10 +37,10 @@ sun.addEventListener("click",function(){
 })
 
 nav.addEventListener("mouseenter",function(){
-    cursor.style.backgroundColor="black"
+    cursor.style.backgroundColor="#3C3C3C"
 })
 nav.addEventListener("mouseleave",function(){
-    cursor.style.backgroundColor= "#FFC500"
+    cursor.style.backgroundColor = "#FFC500"
 })
 
 var cursor = document.querySelector(".cursor")
@@ -49,5 +49,7 @@ body.addEventListener("mousemove",function(dets){
     cursor.style.left =dets.x+"px" 
     cursor.style.top =dets.y+"px"
 })
+
+
 
 

@@ -9,6 +9,19 @@ html,body{
 height:100%;
 width:100%;
 }
+
+@font-face {
+  font-family: scriptoram;
+  src: url(./ScriptoramaJF-Tradeshow.woff);
+}
+
+@font-face {
+  font-family: helveticaaa;
+  src: url(./HelveticaNeueLTStd-Bd.woff);
+}
+
+
+
 .forever h1{
   text-wrap: nowrap;
   -webkit-text-stroke: 1px #FFC500;
