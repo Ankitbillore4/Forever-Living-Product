@@ -51,5 +51,17 @@ body.addEventListener("mousemove",function(dets){
 })
 
 
+var tl = gsap.timeline()
 
-
+tl.from(".shop",{
+    x:-300,
+    duration:3,
+})
+tl.from(".join",{
+    x:-300,
+    duration:,
+})
+tl.from(".about",{
+    x:-300,
+    duration:1,
+})
