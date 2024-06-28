@@ -51,17 +51,74 @@ body.addEventListener("mousemove",function(dets){
 })
 
 
-var tl = gsap.timeline()
 
-tl.from(".shop",{
-    x:-300,
+
+gsap.from(".sweet",{
+    y:80,
+    delay:2,
+    duration:1.8,
+    opacity:0,
+    stagger:0.4
+})
+
+gsap.from(".rightimg",{
+    y:80,
+    delay:2,
+    duration:1.8,
+    opacity:0,
+    stagger:0.4
+})
+
+
+gsap.from(".leftimg",{
+    y:80,
+    delay:2,
+    duration:1.8,
+    opacity:0,
+    stagger:0.4
+})
+
+gsap.from(".start",{
+    y:80,
+    delay:2.1,
+    duration:1.9,
+    opacity:0,
+    stagger:0.4
+})
+gsap.from(".egallogo",{
+    delay:0.9,
+    duration:2,
+    opacity:-1,
+})
+gsap.from(".aelovera",{
+    y:100,
+    duration:2,
+    delay:1,
+    opacity:-1,
+})
+gsap.from(".rexbox",{
+    y:80,
     duration:3,
+    delay:3,opacity:0,
+
 })
-tl.from(".join",{
-    x:-300,
-    duration:,
+gsap.from(".rex",{
+    y:80,
+    duration:2,
+    delay:2,
+    opacity:0,
+    stagger:0.5
 })
-tl.from(".about",{
-    x:-300,
-    duration:1,
+gsap.from(".rexxx",{
+    y:80,
+    duration:2.5,
+    delay:2,
+    opacity:0,
+    stagger:0.5
+})
+gsap.from(".cards",{
+    y:100,
+    duration:3,
+    opacity:0,
+    delay:4,
 })
