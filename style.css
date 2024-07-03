@@ -2,7 +2,6 @@
   margin:0%;
   padding:0%;
   box-sizing: border-box;
-  font-family: 'gilroy';
 }
 
 html,body{
@@ -35,7 +34,6 @@ body{
  background-color: black;
 }
 
-/* .cursor{
-  background-color: #ffc40000;
-  box-shadow: 0px 0px 15px 15px #ffc400;
-} */
+.navpart2 h1{
+  font-family: 'Times New Roman', Times, serif;
+}

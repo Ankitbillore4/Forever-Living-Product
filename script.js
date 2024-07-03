@@ -6,35 +6,55 @@ var lastright = document.querySelector(".lastright")
 var lasttop = document.querySelector(".lasttop")
 var lastbottom = document.querySelector(".lastbottom")
 var nav = document.querySelector(".nav")
-var page1part1 =document.querySelector(".page1part1")
+var h1 = document.querySelector(".navpart2 h1")
+var black2 = document.querySelector(".black2")
+var black1 = document.querySelector(".black1")
+var  page1part1 = document.querySelector(".page1part1")
+var  page1part2 = document.querySelector(".page1part2")
+var bg =  document.querySelector(".page1part1 h1")
 
 var flag=0
 sun.addEventListener("click",function(){
+    console.log(flag)
    
     if(flag===0){
+        flag=1
         sun.style.backgroundColor = "black"
+        black1.style.color = "black"
+        black2.style.color = "black"
         sun.style.color ="white"
         body.style.backgroundColor ="whitesmoke" 
         nav.style.backgroundColor ="whitesmoke"
-    lastleft.style.color = "black"
-    lastright.style.color ="black"
-    lasttop.style.color ="black"
-    lastbottom.style.color ="black"
-    page1part1.style.backgroundColor ="whitesmoke"
-    flag=1
-
+        lastleft.style.color = "black"
+        lastright.style.color ="black"
+        lasttop.style.color ="black"
+        lastbottom.style.color ="black"
+        h1.style.color ="black"
+        page1part1.style.backgroundColor ="#FFC500"
+        page1part2.style.backgroundColor ="#F0F0F2"
+        bg.style.backgroundColor="black"
+        bg.style.color = "white"
+        
+        
+        
     }else{
-       sun.style.backgroundColor = ""
-        sun.style.color =""
+    black2.style.color = "white"
+    black1.style.color = "white"
+        h1.style.color ="white"
+        flag=0
+       sun.style.backgroundColor = "white"
+        sun.style.color ="black"
     body.style.backgroundColor="black"
-    nav.style.backgroundColor ="#FFC500"
+    nav.style.backgroundColor ="#000"
     lastleft.style.color = "white"
     lastright.style.color ="white"
     lasttop.style.color ="white"
     lastbottom.style.color ="white"
     sun.classList.add = "hidden"
-    page1part1.style.backgroundColor ="black"
-        flag=0
+    page1part1.style.backgroundColor ="#F0F0F2"
+     page1part2.style.backgroundColor ="#FFC500"
+     bg.style.backgroundColor="#FFC500"
+     bg.style.color = "black"
     }
  
 })
@@ -48,6 +68,7 @@ nav.addEventListener("mouseleave",function(){
 
 var cursor = document.querySelector(".cursor")
 var body = document.querySelector("body")
+
 body.addEventListener("mousemove",function(dets){
     cursor.style.left =dets.x+"px" 
     cursor.style.top =dets.y+"px"
@@ -57,21 +78,49 @@ var tl = gsap.timeline()
 
 tl.from(".nav .navpart1",{
     x:-200,
-    duration:2,
+    duration:1.8,
     opacity:-1,
 })
 tl.from(".nav .navpart2",{
-    y:-20,
+    y:50,
     duration:2,
-    opacity:0,
+    opacity:-1,
 
-},"-=1.8")
+},"-=1.9")
 tl.from(".nav .navpart3",{
     y:-20,
     duration:2,
     opacity:0,
 
 },"-=1.1")
+
+
+gsap.from(".page1part1,.page1part2 ",{
+    y:100,
+    duration:2,
+    opacity:-1,
+})
+
+gsap.from(".page1part1 h1, h2 ",{
+    y:50,
+    duration:2,
+    opacity:-1,
+    stagger:0.8
+})
+gsap.from(".page1part1 button",{
+    y:50,
+    opacity:-1,
+    duration:2,
+
+})
+
+// var tl = gsap.timeline()
+
+// tl.from(".page1part2",{
+//     width:"45%",
+//     duration:3,
+//     opacity:0
+// })
 
 
 gsap.to(".photoss img",{
