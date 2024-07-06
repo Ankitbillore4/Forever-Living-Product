@@ -32,7 +32,7 @@ sun.addEventListener("click",function(){
         h1.style.color ="black"
         page1part1.style.backgroundColor ="#FFC500"
         page1part2.style.backgroundColor ="#F0F0F2"
-        bg.style.backgroundColor="black"
+        bg.style.backgroundColor="#3C3C3C"
         bg.style.color = "white"
         
         
@@ -81,10 +81,11 @@ tl.from(".nav .navpart1",{
     duration:1.8,
     opacity:-1,
 })
-tl.from(".nav .navpart2",{
-    y:50,
+tl.from(".nav .naavpart2",{
+    y:-100,
     duration:2,
     opacity:-1,
+    stagger:0.2
 
 },"-=1.9")
 tl.from(".nav .navpart3",{
@@ -92,27 +93,52 @@ tl.from(".nav .navpart3",{
     duration:2,
     opacity:0,
 
-},"-=1.1")
+},"-=1.5")
 
 
-gsap.from(".page1part1,.page1part2 ",{
-    y:100,
+
+var timeline = gsap.timeline()
+
+
+timeline.from(".page1part2",{
+    width:"100%",
+    duration:2,
+    delay:0.9,
+},"anime")
+
+timeline.from(".page1part1",{
+    width:"0%",
+    duration:2,
+    delay:0.9,
+},"anime")
+
+timeline.from(".page1part1 h1",{
+    x:-300,
     duration:2,
     opacity:-1,
-})
+    stagger:0.4,
+},"-=1.6")
 
-gsap.from(".page1part1 h1, h2 ",{
-    y:50,
-    duration:2,
-    opacity:-1,
-    stagger:0.8
-})
-gsap.from(".page1part1 button",{
-    y:50,
-    opacity:-1,
-    duration:2,
 
-})
+// gsap.to('.helloh1',{
+//     x:-100,
+//     duration:3,
+// })
+
+// var tl = gsap.timeline({
+//     scrollTrigger:{
+//         scroller:"body",
+//         trigger:'page1part1',
+        
+//     }
+// })
+
+
+
+
+
+
+
 
 // var tl = gsap.timeline()
 
@@ -162,7 +188,6 @@ gsap.from(".aelovera",{
         scrollTrigger:{
             trigger:".aelovera",
             scroller:".main",
-            
             start:"top 85%"
            
         }
@@ -309,13 +334,17 @@ gsap.from(".pagerightimg",{
  
  })
 
-        gsap.to(".forever h1",{
-            transform:"translateX(-100%)",
-            duration:3,
-            repeat:-1,
-            ease:"none",
-          })         
-    
+ const textWidth = document.querySelector('.forever').scrollWidth;
+
+ gsap.to(".forever", {
+   x: `-${textWidth}px`,
+   duration: 40,
+   repeat: -1,
+   ease: "none",
+   onRepeat: function() {
+     gsap.set(this.targets(), { x: window.innerWidth });
+   }
+ });
 
         //   if we want to edit nav bar so comment in this code
  
