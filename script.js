@@ -120,35 +120,6 @@ timeline.from(".page1part1 h1",{
 },"-=1.6")
 
 
-// gsap.to('.helloh1',{
-//     x:-100,
-//     duration:3,
-// })
-
-// var tl = gsap.timeline({
-//     scrollTrigger:{
-//         scroller:"body",
-//         trigger:'page1part1',
-        
-//     }
-// })
-
-
-
-
-
-
-
-
-// var tl = gsap.timeline()
-
-// tl.from(".page1part2",{
-//     width:"45%",
-//     duration:3,
-//     opacity:0
-// })
-
-
 gsap.to(".photoss img",{
     transform:"translateX(100%)",
     repeat:-1,
@@ -346,28 +317,4 @@ gsap.from(".pagerightimg",{
    }
  });
 
-        //   if we want to edit nav bar so comment in this code
- 
-        //   var fakenav = document.querySelector(".fakenav")
- 
-        //   window.addEventListener("wheel",function(dets){
-        //     if(dets.deltaY>0){
-        //         console.log("seeda");
-
-        //         nav.classList.add("hidden")
-        //         nav.style= `ease duration-300`
-        //         fakenav.classList.add("hidden")
-
-        //     }else{
-        //         gsap.from(".nav",{
-        //             y:-30,
-        //             duration:0.5,
-        //             opacity:-1,
-        //         })
-        //         console.log("ulta");
-        //         nav.classList.remove("hidden")
-        //         fakenav.classList.remove("hidden")
-               
-        //     }
-
-        //   })
+        
