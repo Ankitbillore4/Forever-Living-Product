@@ -12,12 +12,13 @@
 
 <body>
     <!-- <video class="fixed h-[100vw] w-[100vw] mt-[-430px] z-[-1] " controls loop autoplay muted src="./The Power of Aloe Vera _  Forever Living UK & Ireland.mp4"></video> -->
-    <div class="main h-screen w-full overflow-x-hidden   ">
-        <div class="nav h-[7vw] w-[100vw] text-white bg-black flex justify-around px-[6vw] items-center gap-[100px] p-2  border-b border-20 border-black  z-30 ease duration-900 ">
+    <div class="main h-screen w-full overflow-x-hidden relative  ">
+        <div class="nav h-[20vw] sm:h-[7vw] h-[10vw] sm:w-[100vw] text-white bg-black flex items-center  justify-around p-2  border-b border-20 border-black  z-30 ease duration-900 ">
             <div class="navpart1">
-                <h1 class="text-[4vw] "><span class="for text-[#FFC500] ">FOR</span>EVER</h1>
+                <h1 class="text-[85%] sm:text-[4vw] "><span class="for text-[#FFC500] ">FOR</span>EVER</h1>
             </div>
-            <div class="naavpart2 flex gap-[2vw]">
+            
+            <div class="naavpart2 flex gap-[2vw] hidden sm:block sm:flex">
               <h1 class="naavpart2 hover:border-b text-[1.2vw]">Home</h1>
               <h1 class="naavpart2 hover:border-b text-[1.2vw]">About</h1>
               <h1 class="naavpart2 hover:border-b text-[1.2vw]">Services</h1>
@@ -25,71 +26,86 @@
               <h1 class="naavpart2 hover:border-b text-[1.2vw]">Contact</h1>
 
             </div>
-            <div class="navpart3 flex gap-[1vw] text-[1.2vw]">
+            <div class="navpart3 flex gap-[1vw] text-[1.2vw] hidden sm:block sm:flex">
                 <i class="ri-user-fill"></i>
                <h1>Login</h1>
                <i class="ri-shopping-bag-fill"></i>
             </div>
              <i class="sun p-2 rounded-full hidden  ml-2 text-[1.5vw] font-semibold ri-sun-line text-white hover:text-yellow-400 ease-in duration-200"></i>
+             <h2 class=""><i class="menu ri-menu-line text-2xl sm:hidden"></i></h2>
                 </div>
-        <div class="page1 h-[30vw] w-[100vw]  flex  ">
-            <div class="page1part1 h-full w-[100%] bg-[#F0F0F2] flex flex-col justify-center items-center ">
-                 <h1 class="text-[3.2vw]  font-semibold mt-[6vw] bg-[#FFC500] text-center px-[2vw] rounded-[5px]">
+                <div class="sidebar h-[90vh] sm:[20vw] w-[50vh]   absolute top-0 right-[-50vh]  pt-[2vw] text-black z-30 leading-[15vw] tracking-[1vw] pl-[12vw] font-bold fixed">
+                    <i class="cut ri-close-large-fill text-[8vw] text-white flex absolute right-[10vw] "></i>
+                    <h1 class="side hover:border-b text-[5.2vw] mt-[15vw]">Home</h1>
+              <h1 class="side hover:border-b text-[5.2vw]">About</h1>
+              <h1 class="side hover:border-b text-[5.2vw]">Services</h1>
+              <h1 class="side hover:border-b text-[5.2vw]">Blogs</h1>
+              <h1 class="side hover:border-b text-[5.2vw]">Contact</h1>
+              <div class="side h-[1px] w-[100vw] bg-black ml-[-5vw] overflow-x-hidden"></div>
+              <img class="side ml-[-3vw] mt-[2vw]" src="./0f643326938af92342e60743e1e105d2-removebg-preview.png" alt="">
+              <i class="side ri-instagram-fill text-[7vw]"></i>
+              <i class="side ri-facebook-circle-fill text-[7vw]"></i>
+              <i class="side ri-twitter-x-line text-[7vw]"></i> 
+                </div>
+
+        <div class="page1 sm:h-[30vw] h-[50vh] w-[100vw] sm:w-[100vw]  sm:flex  ">
+            <div class="page1part1 sm:h-full h-[70%] w-[100vw] sm:w-[100%] bg-[#F0F0F2] flex flex-col justify-center items-center ">
+                 <h1 class="sm:text-[3.2vw]  text-[8vw] font-semibold sm:mt-[6vw] mt-[5vw] bg-[#FFC500] text-center sm:px-[2vw] px-[10%] rounded-[5px]">
                     FOREVER LIVING PRODUCT'S
                 </h1>
-                <h1 class="w-[45vw] text-[1.2vw]   pt-[2vw] text-center">Millions of people in over 160 countries have discovered the benefits of Forever’s aloe vera
+                <h1 class="sm:w-[45vw] sm:text-[1.2vw] text-[4vw] sm:px-0 px-[7%]  sm:pt-[2vw] pt-[7%] text-center">Millions of people in over 160 countries have discovered the benefits of Forever’s aloe vera
                     products to help them and their families look better and feel better. </h1>
                   
             </div>
-            <div class="page1part2  h-full w-[40%] bg-[#FFC500] flex justify-center">
-                <img class="h-full " src="./aloe-vera-gel-forever-forever-living-products-aloe-vera-gel-forever-drink-drink-thumbnail-removebg-preview.png" alt="">
+            <div class="page1part2  sm:h-full sm:w-[40%] h-[100%] bg-[#FFC500] flex justify-center">
+                <img class="sm:h-full h-[100%]" src="./aloe-vera-gel-forever-forever-living-products-aloe-vera-gel-forever-drink-drink-thumbnail-removebg-preview.png" alt="">
             </div>
 
 
         </div>
-        <div class="page2 h-[100vw] w-[100vw] mt-[5vw]">
-            <div class=" h-[15%]  flex  justify-center">
-                <img class="egallogo h-[12vw]"
+        <div class="page2 sm:h-[100vw] sm:w-[100vw] sm:mt-[5vw] mt-[81vw]">
+            <div class=" sm:h-[15%] h-[15vw] flex  justify-center">
+                <img class="egallogo sm:h-[12vw] h-[35vw]"
                     src="./png-transparent-forever-logo-forever-living-products-forever-living-consultant-aloe-vera-cosmetics-health-product-miscellaneous-logo-bird-removebg-preview.png"
                     alt="">
             </div>
-            <div class="h-[35%]  flex justify-center gap-10">
+            <div class="sm:h-[35%] sm:mt-0 mt-[30vw] sm:flex justify-center gap-10">
                 <div
-                    class="leftimg h-[99%] w-[37%]  bg-[url('https://cdn.foreverliving.com/content/cards/images/aloe_peaches_mini_ad_544x568_1652131522139.jpg')] ; bg-cover position-center">
-                    <div class="text-[3.8vw] font-bold tracking-wide w-[90%] mt-6 ml-6 leading-none text-center">
+                    class="leftimg sm:h-[99%]  sm:w-[37%]  bg-[url('https://cdn.foreverliving.com/content/cards/images/aloe_peaches_mini_ad_544x568_1652131522139.jpg')] ; bg-cover position-center">
+                    <div class="sm:text-[3.8vw] text-[10vw] sm:px-0 px-[5vw] font-bold sm:tracking-wide sm:w-[90%] sm:mt-6 sm:pt-0 pt-[15vw] sm:ml-6 leading-none text-center">
                         <h1 class="sweet">Sweet Sunshine in a <span
                                 class="sweet font-[scriptoram] font-[300]">Glass</span></h1>
                     </div>
-                    <div class="button flex items-center justify-center mt-[61%]">
+                    <div class="button flex items-center justify-center sm:mt-[61%] mt-[60%] sm:mb-0 mb-[20%]">
                         <h1
-                            class=" bg-white w-[20vw] font-semibold border-black border-2 text-[1.2vw] py-[0.2vw] px-[1vw] hover:bg-black hover:text-white ease-in duration-200">
+                            class=" bg-white sm:w-[20vw] font-semibold border-black border-2 sm:text-[1.2vw] py-[0.2vw] px-[1vw] hover:bg-black hover:text-white mb-[8%] ease-in duration-200">
                             SHOP FOREVER ALOE PEACHES</h1>
                     </div>
                 </div>
                 <div
-                    class="rightimg h-[99%] w-[37%]  bg-[url('https://cdn.foreverliving.com/content/cards/images/protecting_day_lotion_2_ad_544x568_1682619321260.jpg')] ; bg-cover position-center">
-                    <div class="text-[3.8vw] font-bold tracking-wide w-[100%] mt-6 leading-none text-center">
-                        <h1 class="start">Start Every Day <span class="start font-[scriptoram] font-[300]">With</span>
+                    class="rightimg sm:h-[99%] h-[120vw] sm:w-[37%] sm:mt-0 mt-[-14vw]  bg-[url('https://cdn.foreverliving.com/content/cards/images/protecting_day_lotion_2_ad_544x568_1682619321260.jpg')] ; bg-cover position-center">
+                    <div class="sm:text-[3.8vw] text-[10vw] sm:px-0 px-[7vw] font-bold sm:tracking-wide sm:w-[100%] sm:mt-6 sm:pt-0 pt-[15vw]  leading-none text-center">
+                        <h1 class="start">Start Every Day <span class="start font-[scriptoram] font-[300] ">With</span>
                         </h1>
                     </div>
-                    <div class="button flex items-center justify-center mt-[61%]">
+                    <div class="button flex items-center justify-center sm:mt-[61%] mt-[74%] sm:mb-0 ">
                         <h1
-                            class="bg-white w-[20vw] font-semibold border-black border-2 text-[1.2vw] py-[0.2vw] px-[1vw] hover:bg-black hover:text-white ease-in duration-200">
+                            class="bg-white sm:w-[20vw] font-semibold border-black border-2 sm:text-[1.2vw] py-[0.2vw] px-[1vw] hover:bg-black hover:text-white ease-in duration-200">
                             SHOP PROTECTING DAY LOTION</h1>
                     </div>
                 </div>
             </div>
-            <div class="h-[23vw] w-[100vw] mt-5  flex justify-center">
+            <div class="sm:h-[23vw]  sm:w-[100vw]  sm:mt-5 mt-[-13vw] sm:flex sm:justify-center ">
                 <div
-                    class="aelovera h-[100%] w-[77%] bg-red-800 bg-[url('https://cdn.foreverliving.com/content/cards/images/usda_eu_certification_flp_banner_banner_1120x350_1715889963340.jpg')] ; bg-cover">
-                    <div class="button mt-[18vw] flex justify-center ">
+                    class="aelovera sm:h-[100%] h-[80vw] sm:w-[77%] w-[100vw] bg-red-800 bg-[url('https://cdn.foreverliving.com/content/cards/images/usda_eu_certification_flp_banner_banner_1120x350_1715889963340.jpg')] ; bg-cover">
+                    <div class="button sm:mt-[18vw] mt-[19vw] flex justify-center ">
                         <h1
-                            class="bg-white text-[1.2vw] font-semibold border-black border-2 px-[1.2vw] hover:bg-black hover:text-white ease-in duration-200">
+                            class="bg-white sm:text-[1.2vw] sm:mt-0 mt-[70vw] font-semibold border-black border-2 px-[1.2vw] hover:bg-black hover:text-white ease-in duration-200">
                             LEARN MORE</h1>
                     </div>
                 </div>
             </div>
-            <div class="forever h-[5%] w-full  mt-[90px] flex text-4xl font-bold items-center px-2 gap-10 text-[5vw]">
+            <div class="forever sm:h-[5%] w-full  sm:mt-[90px] mt-[40px] flex text-4xl font-bold items-center px-2 gap-10 sm:text-[5vw] text-[10vw]">
                 <h1>FOREVER LIVING PRODUCTS</h1>
                 <h1>FOREVER LIVING PRODUCTS</h1>
                 <h1>FOREVER LIVING PRODUCTS</h1>
@@ -112,61 +128,61 @@
                 <h1>FOREVER LIVING PRODUCTS</h1>
                 <h1>FOREVER LIVING PRODUCTS</h1>
             </div>
-            <div class="h-[34vw] w-[100vw]  mt-[3vw] flex justify-center gap-[1vw] ">
-                <div class="h-full w-[30%] ">
-                    <img class="h-full w-full object-cover" src="https://static.vecteezy.com/system/resources/previews/024/387/882/non_2x/3d-male-character-presenting-to-the-left-free-png.png" alt="">
+            <div class="h-[34vw] w-[100vw]  mt-[3vw] flex justify-center justify-around ">
+                <div class="sm:h-full sm:w-[30%] w-[110vw]">
+                    <img class="sm:h-full h-[80vw] w-[100vw] sm:mt-0 mt-[13vw]  sm:w-full sm:ml-0 ml-[-11vw]  object-cover" src="https://static.vecteezy.com/system/resources/previews/024/387/882/non_2x/3d-male-character-presenting-to-the-left-free-png.png" alt="">
                 </div>
-                <div class="h-full w-[60%] ">
-                    <video autoplay loop muted src="./Forever Aloe Vera Gel 3D Advertisement Animation Video _ 3D Artist _ 3D Product Design.mp4" class="h-full w-full"></video>
+                <div class="sm:h-full h-[150%] sm:w-[60%]  w-[100vw]">
+                    <video autoplay loop muted src="./Forever Aloe Vera Gel 3D Advertisement Animation Video _ 3D Artist _ 3D Product Design.mp4" class="sm:h-full h-[70vw] sm:w-full w-[100vw] sm:ml-0 ml-[-20vw] sm:mt-0 mt-[-15vw]"></video>
                 </div>
             </div>
-            <div class=" h-[40vw] w-[100vw] flex justify-center p-10 mt-[1vw]">
-                <div class="rexboxleft h-full w-[40%]">
+            <div class=" sm:h-[40vw] sm:w-[100vw] sm:flex sm:justify-center sm:p-10  sm:mt-[1vw] mt-[60%] ">
+                <div class="rexboxleft sm:h-[34.8vw]  h-[40%] sm:w-[38vw] w-[100%] ">
                     <img class="h-full w-full object-cover"
                         src="https://cdn.foreverliving.com/content/cards/images/about_-_rex_-_3a_ad_560x568_1614960665076.jpg"
                         alt="">
                 </div>
-                <div class="rexboxright h-full w-[40%] bg-[#FFFFFF]">
-                    <h1 class="rex text-4xl pl-[35%] pt-24 font-['scriptoram']">Rex Maughan</h1>
-                    <p class="rexxx text-center text-sm pt-10 px-20 font-[300]">In 1978, Rex Maughan invited close
+                <div class="rexboxright sm:h-[34.8vw] h-[80vw] sm:w-[38vw] bg-[#FFFFFF]">
+                    <h1 class="rex sm:text-[3vw] text-[11vw] sm:pl-[35%] pl-[25vw] pt-[7vw] font-['scriptoram']">Rex Maughan</h1>
+                    <p class="rexxx text-center sm:text-[1vw] text-[3vw] pt-[1vw] px-[3vw] font-[300]">In 1978, Rex Maughan invited close
                         family and
                         friends to the first Forever Living Products
                         meeting in Tempe, Arizona. There he unveiled a revolutionary and customized plan - offer the
                         best consumable products to the public, products that are proven to promote lasting wellness and
                         health, and let the products and the people who try them speak for themselves.</p>
                     <button
-                        class="bg-white px-2 py-1  font-semibold border-black border-2 hover:bg-black hover:text-white ese-in duration-200 mt-14 ml-[40%]">LEARN
+                        class="bg-white sm:text-[1vw] text-[3vw] sm:px-[0.2vw] px-[5%] py-[1%] sm:py-[0.2vw]  font-semibold border-black border-2 hover:bg-black hover:text-white ese-in duration-200 sm:mt-[4vw] mt-[5vw] sm:ml-[16vw] ml-[35vw]">LEARN
                         MORE</button>
                 </div>
             </div>
-            <div class="cards h-[30vw] w-full  flex justify-center gap-1">
-                <div class="card1 h-full w-[20%] bg-white p-8">
-                    <div class="h-[50%] w-full bg-red-200">
-                        <img class="h-full w-full object-cover position-center"
+            <div class="cards sm:h-[30vw] w-full  sm:flex justify-center gap-1 sm:mt-0 mt-[3vw] ">
+                <div class="card1 sm:h-full h-[120vw] w-[100vw] sm:w-[20%] bg-white p-8 ">
+                    <div class=" sm:h-[13vw]  sm:w-[16vw]  bg-red-200">
+                        <img class="h-[100%] w-[100%] object-cover position-center "
                             src="https://cdn.foreverliving.com/content/cards/images/peaches_home_page_ad_ad_352x280_1579818271081.jpg"
                             alt="">
                     </div>
-                    <p class="text-center pt-10 text-sm">Forever Aloe Peaches™ is like sweet sunshine in a glass. We’ve
+                    <p class="text-center sm:pt-[2vw] sm:text-sm text-[3vw]">Forever Aloe Peaches™ is like sweet sunshine in a glass. We’ve
                         taken
                         our aloe vera gel and infused it with the sweet bold flavor of sun ripened peaches.
                     </p>
                     <button
-                        class="bg-white px-2 py-1 font-[500] font-semibold border-black border-2 hover:bg-black hover:text-white ese-in duration-200 mt-8 ml-[30%]">SHOP
+                        class="bg-white sm:text-[1vw] text-[3vw] sm:px-2 px-[5%] py-[1%] sm:py-1 font-[500] font-semibold border-black border-2 hover:bg-black hover:text-white ese-in duration-200 sm:mt-8 mt-[1vw] sm:ml-[30%] ml-[35%]">SHOP
                         NOW</button>
                 </div>
                 <div
-                    class="card2 h-full relative w-[20%] bg-red-100 bg-[url('https://cdn.foreverliving.com/content/cards/images/Ad-Card-Pref-Customer-352x568.jpg')] ; bg-cover">
-                    <div class="h-[40%] w-full  absolute top-[58%]">
-                        <h1 class="text-md ml-[25%] text-xl font-[scriptoram]">BE A FOREVER VIP</h1>
-                        <P class="text-center W-[20px] pt-5 text-sm">You can save on all purchases by <br>signing up for
+                    class="card2 sm:h-full h-[140vw] w-[100vw] relative sm:w-[20%] bg-red-100 bg-[url('https://cdn.foreverliving.com/content/cards/images/Ad-Card-Pref-Customer-352x568.jpg')] ; bg-cover">
+                    <div class="h-[40%] w-full  absolute sm:top-[58%] top-[90vw]">
+                        <h1 class="sm:text-md sm:ml-[25%] ml-[12vw] sm:text-xl text-[8vw] font-[scriptoram]">BE A FOREVER VIP</h1>
+                        <P class="sm:text-center text-center sm:W-[20px] sm:pt-5 sm:text-sm text-[3.5vw]">You can save on all purchases by <br>signing up for
                             our
                             Preferred <br>Customer Program! </P>
                         <button
-                            class="bg-white px-2 py-1 font-[500] font-semibold border-black border-2 hover:bg-black hover:text-white ese-in duration-200 mt-8 ml-[30%]">LEARN
+                            class="bg-white sm:text-[1vw] text-[3vw] sm:px-2 px-[2%] sm:py-1 py-[1%] font-[500] font-semibold border-black border-2 hover:bg-black hover:text-white ese-in duration-200 sm:mt-8 mt-[5%] sm:ml-[30%] ml-[40%]">LEARN
                             MORE</button>
                     </div>
                 </div>
-                <div class="card3 h-full w-[20%] bg-white p-8">
+                <div class="card3 sm:h-full h-[130vw] w-[100vw] sm:w-[20%] bg-white p-8">
                     <div class="h-[50%] w-full bg-red-200">
                         <img class="h-full w-full object-cover"
                             src="https://cdn.foreverliving.com/content/cards/images/abn_home_page_ad_2_ad_352x280_1579817557288.jpg"
@@ -177,19 +193,19 @@
                         Berry Nectar® will awaken your senses with the uplifting natural flavor of cranberries and sweet
                         apples.</p>
                     <button
-                        class="bg-white px-2 py-1 font-[500] font-semibold border-black border-2 hover:bg-black hover:text-white ese-in duration-200 mt-10 ml-[30%]">SHOP
+                        class="bg-white sm:text-[1vw] text-[3vw] px-[4%] py-[1%] sm:px-2 sm:py-1 font-[500] font-semibold border-black border-2 hover:bg-black hover:text-white ese-in duration-200 sm:mt-10 mt-[3vw] sm:ml-[30%] ml-[33%]">SHOP
                         NOW</button>
                 </div>
             </div>
-            <div class="boxleft h-[30vw] w-full flex justify-center pt-5 text-white">
-                <div class="h-full w-[30%] ml-[140px] bg-green-100">
+            <div class="boxleft sm:h-[30vw] sm:w-full sm:flex sm:justify-center sm:pt-5 text-white">
+                <div class="sm:h-full h-[100vw] w-[100vw] sm:w-[30%] sm:ml-[140px] bg-green-100">
                     <img class="h-full w-full object-cover"
                         src="https://cdn.foreverliving.com/content/cards/images/join_as_an_fpc_ad_560x568_1702632040349.jpg"
                         alt="">
                 </div>
-                <div class="boxright h-full w-[40%] ">
-                    <h1 class="lastbottom text-2xl ml-[15%] pt-[15%] font-[scriptoram]">Join The Forever Family</h1>
-                    <p class="lastright text-center text-sm pt-5 w-[70%]">As a Forever Preferred Customer, you'll get 5%
+                <div class="boxright sm:h-full h-[100vw] w-[100vw] sm:w-[40%] ">
+                    <h1 class="lastbottom sm:text-2xl text-[8vw] ml-[15%] pt-[15%] font-[scriptoram]">Join The Forever Family</h1>
+                    <p class="lastright text-center text-sm pt-5 sm:w-[70%]">As a Forever Preferred Customer, you'll get 5%
                         off on <br>future purchases and be part of <br>our exclusive club of insiders that will <br>get
                         updates on new products, <br>promotions and news before anyone else. <br><br>
 
@@ -197,36 +213,36 @@
                         consecutive <br>months, you'll be eligible to receive a 30% discount <br>on future purchases.
                         Sign up and start saving today.</p>
                     <button
-                        class="bg-white text-black px-2 py-1 font-[500] font-semibold border-black border-2 hover:bg-[#E6AC02] hover:text-white ese-in duration-200 mt-10 ml-[30%]">JOIN
+                        class="bg-white text-black sm:text-[1vw] text-[4vw] sm:px-2 px-[4%] py-[1%] sm:py-1 font-[500] font-semibold border-black border-2 hover:bg-[#E6AC02] hover:text-white ese-in duration-200 sm:mt-10 mt-[5vw] sm:ml-[30%] ml-[38%]">JOIN
                         NOW</button>
                 </div>
 
             </div>
-            <div class="h-[30vw] w-full  flex justify-center pt-5 text-white">
-                <div class="secondleftbox  h-full w-[40%]  ml-[-130px]">
-                    <h1 class="lasttop text-[2vw] ml-[40%]  pt-[20%] font-[scriptoram]">Forever India HQ</h1>
-                    <p class="lastleft text-center text-[1vw] pt-5 w-[70%] ml-[20%]">Situated at the prime location of
+            <div class="sm:h-[30vw] sm:w-full sm:flex sm:justify-center sm:pt-5 pt-[2vw] text-white ">
+                <div class="secondleftbox  h-[95vw] w-[100vw] sm:h-full sm:w-[40%]  sm:ml-[-130px]">
+                    <h1 class="lasttop sm:text-[2vw] text-[12vw] sm:ml-[40%] ml-[11%]  pt-[20%] font-[scriptoram]">Forever India HQ</h1>
+                    <p class="lastleft text-center sm:text-[1vw] text-[4vw] pt-5 sm:w-[70%] w-[90%] sm:ml-[20%] sm:mx-0 mx-[5%]">Situated at the prime location of
                         Hill Road, Bandra West, in the heart of the Financial capital of India, Mumbai. The Forever
                         Living India head office is at heart of the entire Forever <br>Living Products India operations
                         for over 20 years!</p>
                     <button
-                        class="bg-white text-black px-2 py-1 text-[1vw] font-[500] font-semibold border-black border-2 hover:bg-[#E6AC02] hover:text-white ese-in duration-200 mt-10 ml-[45%]">LEARN
+                        class="bg-white text-black sm:px-2 px-[4%] py-[2%] sm:py-1 sm:text-[1vw] text-[3vw] font-[500] font-semibold border-black border-2 hover:bg-[#E6AC02] hover:text-white ese-in duration-200 sm:mt-10 mt-[2vw] ml-[38%] sm:ml-[45%]">LEARN
                         MORE</button>
                 </div>
-                <div class="secondrightbox  h-full w-[30%] bg-green-100">
+                <div class="secondrightbox  sm:h-full sm:w-[30%] h-[100vw] w-[100vw] bg-green-100">
                     <img class="h-full w-full object-cover"
                         src="https://cdn.foreverliving.com/content/cards/images/indiahq_ad_560x568_1684831974942.jpg"
                         alt="">
                 </div>
 
             </div>
-            <div class="lastbigbox h-[30vw] w-full bg-[#F5CC02] mt-5 flex">
-                <div class="h-full w-[30%] bg-[#FFC500] flex justify-center items-center">
-                    <div class="h-[50%] w-[50%] bg-green-100 rounded-lg">
-                        <img class="h-full w-full object-cover rounded-lg"
+            <div class="lastbigbox sm:h-[30vw] sm:w-full bg-[#FFC500] mt-5 sm:flex">
+                <div class="sm:h-full h-[40vw] w-[100vw] sm:w-[30%] bg-[#FFC500] sm:flex sm:justify-center sm:items-center">
+                    <div class="sm:h-[50%] h-[50vw]  w-[40vw] sm:w-[50%]  sm:ml-0 ml-[30vw]">
+                        <img class="sm:h-full sm:w-full object-cover rounded-lg  "
                             src="https://yt3.googleusercontent.com/ytc/AIdro_mJjw1Jp7R1WcRlaOy1k3jkmqvE00lq_jua2UnVbSwhPwo=s900-c-k-c0x00ffffff-no-rj"
                             alt="">
-                        <div class="flex text-[2vw] justify-center gap-5">
+                        <div class="flex sm:mt-0 mt-[-4vw] sm:pl-0 pl-[8vw] sm:text-[2vw] text-[5vw] sm:justify-center sm:gap-5 gap-[2vw]">
                             <i class="ri-instagram-fill hover:text-white ese-in duration-200"></i>
                             <i class="ri-facebook-box-fill hover:text-white ese-in duration-200"></i>
                             <i class="ri-twitter-fill hover:text-white ese-in duration-200"></i>
@@ -234,19 +250,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-full w-[70%] bg-[#FFC500] flex gap-2">
-                    <div class="h-full w-[49%]">
+                <div class="am:h-full sm:w-[70%] bg-[#FFC500] sm:flex sm:gap-2">
+                    <div class="sm:h-full sm:w-[49%]">
                         <div class=" flex flex-col items-center tracking-[1vw] mt-[3vw]">
-                            <h1 class=" pt-[2vw]"><img class="h-[2vw]"
+                            <h1 class=" pt-[2vw]"><img class="sm:h-[2vw] h-[5vw]"
                                     src="https://cdn.foreverliving.com/flpi/logo/foreverliving-eCom-logo.svg" alt="">
                             </h1>
-                            <div class="flex items-center text-[1.5vw] font-semibold mt-[-1vw] tracking-[1vw]">
-                                <h1 class="">LIVING</h1><img class="h-[7vw] ml-[-20px]"
+                            <div class="flex items-center sm:text-[1.5vw] text-[3vw] font-semibold mt-[-1vw] sm:ml-0 ml-[6vw] sm:tracking-[1vw] tracking-[4vw]">
+                                <h1 class=" ">LIVING</h1><img class="sm:h-[7vw] h-[15vw] sm:ml-[-20px] ml-[-5vw]"
                                     src="./unnamed-removebg-preview.png" alt="">
-                                <h1 class="ml-[-20px]">PRODUCTS</h1>
+                                <h1 class="sm:ml-[-20px] ml-[-2vw]">PRODUCTS</h1>
                             </div>
                         </div>
-                        <p class="text-[0.80vw] text-center"><span class="font-semibold">Forever Living Imports (India)
+                        <p class="sm:text-[0.80vw] text-[3vw] sm:px-0 px-[5vw] text-center"><span class="font-semibold">Forever Living Imports (India)
                                 Pvt. Ltd. <br></span>
                             <span class="font-semibold">Registered Address:</span> 501, Sharyans Centre, 5th Floor,
                             Above Lijjat Papad Opp Bandra Rly Stn, 3 <br>Gurunanak Road, Bandra West Mumbai- 400050 <br>
@@ -257,26 +273,26 @@
                             <span class="font-semibold">CIN: U51101MH2011PTC212700</span>
                         </p>
                         <div class="flex mt-[2vw] justify-center gap-2"><img
-                                src="./footer_staticpage_image_32x32_1680711268604-removebg-preview.png" alt="">
-                            <h1>We are proud members of the <span class="font-semibold">Direct Selling
+                               class="sm:h-[2vw] h-[5vw]"  src="./footer_staticpage_image_32x32_1680711268604-removebg-preview.png" alt="">
+                            <h1 class="sm:text-[1vw] text-[2vw]">We are proud members of the <span class="font-semibold">Direct Selling
                                     Association</span></h1>
                         </div>
                     </div>
-                    <div class="h-full w-[49%]  flex flex-col gap-5 pt-[2vw]">
-                        <div class="h-[10vw] w-[20vw]">
-                            <p class="text-[0.80vw]">Cookie Policy <br>
+                    <div class="h-full sm:w-[49%]  w-[50%] sm:ml-0 ml-[7vw] flex flex-col gap-5 pt-[2vw]">
+                        <div class="sm:h-[10vw] h-[20vw] sm:w-[20vw] w-[40vw]">
+                            <p class="sm:text-[0.80vw] text-[2.5vw]">Cookie Policy <br>
                                 Income Disclosure Statement <br>
                                 Accessibility <br>
                                 Privacy Notice <br>
                                 Company Policy & Procedures <br>
                                 Compliance Documents</p>
                         </div>
-                        <div class="h-[10vw] w-[20vw] ml-[10vw]">
-                            <p class="text-[0.80vw]">Rex Maughan Forever Giving Foundation <br>
+                        <div class="sm:h-[10vw]  sm:w-[20vw] w-[40vw] sm:ml-[10vw] ml-[50vw]">
+                            <p class="sm:text-[0.80vw] text-[2.5vw]">Rex Maughan Forever Giving Foundation <br>
                                 FBO Account Login <br>
                                 FLP360 Desktop Login</p>
                         </div>
-                        <p class="font-bold">Copyright © 2024 Forever Living.com, LLC and related entities. All Rights
+                        <p class="font-bold sm:w-[100%] w-[110vw] sm:text-[1vw] text-[2vw] smn:mb-0 mb-[3vw] sm:ml-0 ml-[4vw]">Copyright © 2024 Forever Living.com, LLC and related entities. All Rights
                             Reserved.</p>
                     </div>
 

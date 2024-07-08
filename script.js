@@ -12,6 +12,42 @@ var black1 = document.querySelector(".black1")
 var  page1part1 = document.querySelector(".page1part1")
 var  page1part2 = document.querySelector(".page1part2")
 var bg =  document.querySelector(".page1part1 h1")
+var sidebar = document.querySelector(".sidebar")
+var menu = document.querySelector(".menu")
+var cut = document.querySelector(".cut")
+
+
+
+
+
+let time= gsap.timeline()
+
+time.to(".sidebar",{
+    right:0,
+    duration:1.2,
+})
+time.from(".side",{
+    x:200,
+    opacity:0,
+    duration:1,
+    stagger:0.2
+},"-=1.5")
+
+
+time.pause()
+
+
+menu.addEventListener("click",function(){
+   
+    time.play()
+})
+
+cut.addEventListener("click",function(){
+    time.reverse()
+    
+})
+
+
 
 var flag=0
 sun.addEventListener("click",function(){

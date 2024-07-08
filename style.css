@@ -19,8 +19,6 @@ width:100%;
   src: url(./HelveticaNeueLTStd-Bd.woff);
 }
 
-
-
 .forever h1{
   text-wrap: nowrap;
   -webkit-text-stroke: 1px #FFC500;
@@ -36,4 +34,15 @@ body{
 
 .navpart2 h1{
   font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width:600px) {
+  .navpart1{
+    font-size: 15vw;
+  }
+}
+
+.sidebar{
+  background-color:transparent;
+  backdrop-filter: blur(10px);
 }
