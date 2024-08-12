@@ -24,7 +24,7 @@ let time= gsap.timeline()
 
 time.to(".sidebar",{
     right:0,
-    duration:1.2,
+    duration:1,
 })
 time.from(".side",{
     x:200,
